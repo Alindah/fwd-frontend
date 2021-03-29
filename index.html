@@ -1,7 +1,19 @@
-<body>
-	<form action="" method="post">
-		<label for="num_input">Input:</label>
-		<input type="text" name="num_input" value={{request.form.num_input}}><br><br>
-		<button type=”submit”> Submit </button>
-	</form>
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/default.css">
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</head>
+	<body onload="test()">
+		<div id="form-str-len">
+			<p>
+				Enter a string and submit to return its length.
+			<p>
+			<form action="" method="post">
+				<label for="num_input">Input:</label>
+				<input type="text" name="num_input" value="Hello World!">
+				<button type=”submit”> Submit </button>
+			</form>
+		</div>
+	</body>
+</html>
