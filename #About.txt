@@ -1,0 +1,20 @@
+About this Project
+==================
+VE name: env_flask
+Python version: 3.9.2
+Additional packages installed:
+- Flask 1.1.2
+- Flask_restful
+
+
+Old Way to Start Server (Don't Use)
+===================================
+You can run this website on localhost by using this command:
+>>> python3 -m http.server
+
+Then open http://localhost:8000/ in your browser.
+
+
+
+
+
