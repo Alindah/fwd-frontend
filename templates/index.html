@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="static/css/default.css">
-		<script type="text/javascript" src="static/scripts/script.js"></script>
-	</head>
-	<body>
-		<div id="form-str-len">
-			<p>
-				Enter a string and submit to return its length.
-			<p>
-			<form action="http://localhost:5000/" method="post" target="_blank">
-				<label for="num_input">Input:</label>
-				<input type="text" name="num_input" value="Hello World!">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-	</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="form-str-len">
+		<p>
+			Enter a string and submit to return its length.
+		<p>
+		<form action="" method="post">
+			<label for="num_input">Input:</label>
+			<input type="text" name="num_input" value="{{ form_in }}">
+			<input type="submit" value="Submit">
+		</form>
+		{% if res %}
+			<p>Your string contains {{ res }} characters</p>
+			{% else %}
+			<p>Waiting for a response</p>
+		{% endif %}
+	</div>
+{% endblock %}
