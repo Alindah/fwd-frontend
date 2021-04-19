@@ -5,6 +5,7 @@ Python version: 3.9.2
 Additional packages installed:
 - Flask 1.1.2
 - Flask_restful
+- Requests
 
 
 Old Way to Start Server (Don't Use)
