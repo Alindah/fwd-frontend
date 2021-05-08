@@ -24,5 +24,7 @@ def send_form():
 	return render_template("index.html", user=some_user, form_in=user_str, res=res.text)
 
 if __name__ == '__main__':
-    app.run(debug=True, host="localhost", port=8000)
+	# Note: Can't choose localhost as host because it will not work with Docker
+    # app.run(debug=True, host="localhost", port=8000)
+	app.run(debug=True, host="0.0.0.0", port=8000)
 
