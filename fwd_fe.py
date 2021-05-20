@@ -9,7 +9,7 @@ import requests
 app = Flask(__name__)
 api = Api(app)
 
-backend_ip = "http://localhost:5000/"
+backend_ip = "http://0.0.0.0:5000/"
 some_user = { 'name': 'Guest' }
 def_val = "Hello World!"
 
